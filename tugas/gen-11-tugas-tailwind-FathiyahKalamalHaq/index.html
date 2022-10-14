@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio-tailwind version</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/v4-shims.min.js" integrity="sha512-sxzP+41Yd4m6g9trbyNp1jJKm9ZuP7pqD5qUN9ik7vkdsrbcKpHCDTDN64DLYF3xrwmDfk2iwUAlSfOl2ACupA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header class="p-10 text-center text-white bg-sky-300 bg-[url(https://source.unsplash.com/PKxC_o7Cb-U)]">
+        <h1 class="font-bold text-4xl">Welcome!</h1>
+        <h1 class="font-bold text-2xl">My Portofolio Page</h1>
+    </header>
+    
+    <nav class="px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500" aria-controls="mobile-menu-2" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                            Project 
+                            <svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar" class="hidden z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10.4px, 0px);">
+                            <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#project" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Project1</a>
+                                </li>
+                                <li>
+                                    <a href="#project" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Project2</a>
+                                </li>
+                                <li>
+                                    <a href="#project" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Project3</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#about" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#skill" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#feedback" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="grid grid-cols-3 p-3 justify-center shadow-md w-3/4 mx-auto mb-5">
+      <div class="col-span-1" id="about">
+        <h2>About Me</h2>
+        <img src="https://source.unsplash.com/CEx86maLUSc/350x300" alt="cat-photo" class="img-fluid">
+      </div>
+      <div class="col-span-2">
+        <p class="mt-5 text-justify">
+          Duis cillum eu amet ipsum ut sint nostrud dolore. Minim adipisicing sint veniam id officia amet deserunt elit. 
+          Laborum duis eu sunt laborum occaecat anim dolor velit ea est nisi consectetur laboris. 
+          Enim occaecat ea mollit laborum anim laborum nostrud incididunt laborum amet nulla consectetur.
+          Duis cillum eu amet ipsum ut sint nostrud dolore. Minim adipisicing sint veniam id officia amet deserunt elit. 
+          Laborum duis eu sunt laborum occaecat anim dolor velit ea est nisi consectetur laboris. 
+          Enim occaecat ea mollit laborum anim laborum nostrud incididunt laborum amet nulla consectetur.
+        </p>
+      </div>
+    </div>
+
+    <div id="project" class="grid grid-cols-6 gap-2 p-3 justify-center shadow-md w-3/4 mx-auto mb-5">
+      <div class="col-span-1">
+        <h2>Project1</h2>
+        <img src="https://source.unsplash.com/CEx86maLUSc/350x300" alt="cat-photo" class="img-fluid">
+      </div>
+      <div class="col-span-1">
+        <p class="mt-5 text-justify">
+          Duis cillum eu amet ipsum ut sint nostrud dolore. Minim adipisicing sint veniam id officia amet deserunt elit. 
+          Laborum duis eu sunt laborum occaecat anim dolor velit ea est nisi consectetur laboris. 
+          Enim occaecat ea mollit laborum anim laborum nostrud incididunt laborum amet nulla consectetur.
+        </p>
+      </div>
+      <div class="col-span-1">
+        <h2>Project2</h2>
+        <img src="https://source.unsplash.com/CEx86maLUSc/350x300" alt="cat-photo" class="img-fluid">
+      </div>
+      <div class="col-span-1">
+        <p class="mt-5 text-justify">
+          Duis cillum eu amet ipsum ut sint nostrud dolore. Minim adipisicing sint veniam id officia amet deserunt elit. 
+          Laborum duis eu sunt laborum occaecat anim dolor velit ea est nisi consectetur laboris. 
+          Enim occaecat ea mollit laborum anim laborum nostrud incididunt laborum amet nulla consectetur.
+        </p>
+      </div>
+      <div class="col-span-1">
+        <h2>Project3</h2>
+        <img src="https://source.unsplash.com/CEx86maLUSc/350x300" alt="cat-photo" class="img-fluid">
+      </div>
+      <div class="col-span-1">
+        <p class="mt-5 text-justify">
+          Duis cillum eu amet ipsum ut sint nostrud dolore. Minim adipisicing sint veniam id officia amet deserunt elit. 
+          Laborum duis eu sunt laborum occaecat anim dolor velit ea est nisi consectetur laboris. 
+          Enim occaecat ea mollit laborum anim laborum nostrud incididunt laborum amet nulla consectetur.
+        </p>
+      </div>
+      <div class="col-span-1">
+        <h2>Project4</h2>
+        <img src="https://source.unsplash.com/CEx86maLUSc/350x300" alt="cat-photo" class="img-fluid">
+      </div>
+      <div class="col-span-1">
+        <p class="mt-5 text-justify">
+          Duis cillum eu amet ipsum ut sint nostrud dolore. Minim adipisicing sint veniam id officia amet deserunt elit. 
+          Laborum duis eu sunt laborum occaecat anim dolor velit ea est nisi consectetur laboris. 
+          Enim occaecat ea mollit laborum anim laborum nostrud incididunt laborum amet nulla consectetur.
+        </p>
+      </div>
+    </div>
+    <div id="skill" class="grid grid-cols-7 p-5 justify-center shadow-md w-3/4 mx-auto mb-5">
+      <div class="col-span-1 ml-5 font-bold text-xl">
+        <h2>Skills</h2>
+      </div>
+      <div class="col-span-6 mr-20 mt-4 flex justify-between">
+        <i class="fa-brands fa-python fa-2xl" data-toggle="tooltip" data-placement="bottom" title="Python"></i>
+        <i class="fa-brands fa-java fa-2xl" data-toggle="tooltip" data-placement="bottom" title="Java"></i>
+        <i class="fa-brands fa-html5 fa-2xl" data-toggle="tooltip" data-placement="bottom" title="HTML"></i>
+        <i class="fa-brands fa-css3-alt fa-2xl" data-toggle="tooltip" data-placement="bottom" title="CSS"></i>
+        <i class="fa-brands fa-bootstrap fa-2xl" data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
+        
+      </div>
+    </div>
+    <div id="feedback" class="justify-center shadow-md w-3/4 mx-auto mb-5">
+      <div class="mb-5 p-5">
+        <div class="mb-5">
+          <h1 class="text-3xl font-semibold mb-2">Feedback</h1>
+          <p>
+            Thanks for visiting my website! If you have further advice or want to give me some feedback, please fullfill the form below.
+          </p>
+        </div>
+        <div class="mb-5">
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+          <input type="email" id="email" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="email@gmail.com">
+        </div>
+        <div class="">
+          <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+          <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="justify-center shadow-md w-3/4 mx-auto mb-10">
+      <div class="mb-5 p-5">
+        <div class="mb-5">
+          <h1 class="text-3xl font-semibold mb-2">Take A minute survey!!</h1>
+          <p>
+            No bother at all to join the survey, but your answer will help me build my portofolio better.
+          </p>
+        </div>
+        <div class="mb-5">
+          <div>
+              <label for="small-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Initial Name</label>
+              <input type="text" id="small-input" class="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="e.g fath/FKH">
+          </div>  
+        </div>
+        <div class="grid grid-cols-3">
+          <div>This portofolio is...
+            <div class="flex items-center mt-2 mb-4">
+                <input id="helpful" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="helpful" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Helpful</label>
+            </div>
+            <div class="flex items-center mb-4 mt-2">
+                <input checked="" id="Informative" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="Informative" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Informative</label>
+            </div>
+            <div class="flex items-center mt-2 mb-4">
+                <input id="useless" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="useless" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Useless</label>
+            </div>
+            <div class="flex items-center mt-2 mb-4">
+                <input id="screwed" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="screwed" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Screwed</label>
+            </div>
+          </div>
+          <div>Your feeling after read this portofolio..
+            <div>
+              <label for="happy" class="inline-flex relative items-center mb-4 cursor-pointer">
+                <input type="checkbox" value="" id="happy" class="sr-only peer">
+                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Happy</span>
+              </label>
+            </div>
+            <div>
+              <label for="angry" class="inline-flex relative items-center mb-4 cursor-pointer">
+                <input type="checkbox" value="" id="angry" class="sr-only peer" >
+                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Angry</span>
+              </label>
+            </div>
+            <div>
+              <label for="weird" class="inline-flex relative items-center mb-4 cursor-pointer">
+                <input type="checkbox" value="" id="weird" class="sr-only peer" >
+                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Weird</span>
+              </label>
+            </div>
+            <div>
+              <label for="awesome" class="inline-flex relative items-center mb-4 cursor-pointer">
+                <input type="checkbox" value="" id="awesome" class="sr-only peer" checked>
+                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Awesome</span>
+              </label>
+            </div>
+          </div>
+          <div>state
+            <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Select an option</label>
+            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              <option selected="">Choose a country</option>
+              <option value="indo">Indonesia</option>
+              <option value="other">Outside Indonesia</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-5 mt-4">
+          <label for="satisfatory" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your satisfatory experience</label>
+          <input id="satisfatory" type="range" value="50" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+        </div>
+        <div class="mb-5">
+          <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="border">
+      <div class="container-fluid py-4 flex justify-between">
+        <span>Created by FathKalamal</span>
+        <section>
+            <a class="link-light text-decoration-none" href="https://www.instagram.com/fathkalamal/">
+                <i class="fa-brands fa-instagram me-2"></i>
+            </a>
+            
+            <a class="link-light text-decoration-none" href="https://github.com/Fathiyahkhaq">
+                <i class="fa-brands fa-github me-2"></i>
+            </a>
+            <a class="link-light text-decoration-none" href="https://medium.com/@kalamalhaqfathiyah">
+                <i class="fa-brands fa-medium me-2"></i>
+            </a>
+            <a class="link-light text-decoration-none" href="https://www.linkedin.com/in/fathiyah-kalamal-haq-618a06193/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            
+        </section>
+        <section>
+            <a href="" class="text-decoration-none link-light me-3">Contact Me</a>
+            <a href="" class="text-decoration-none link-light">Privacy Term</a>
+        </section>
+      </div>
+    </footer>
+</body>
+</html>
