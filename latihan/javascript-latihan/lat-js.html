@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        console.log("dari head")
+        alert('ngalangin render')
+    </script> -->
+</head>
+<body>
+    <script>
+        console.log('dari body')
+    </script>
+    
+    <h1 id="target">hai bambang</h1>
+    <p>bedanya taruh di body adalah untuk mempercepat performance dari web kita. 
+    maksudnya pas refresh lebih cepet. java kan butuh dicompile duli, kalo js tuh interpreted language.
+    dicompile pas di jalanin. kalo scriptnya udh kompleks, yg dari head bakal ngalangin render yg di body.</p>
+    <script src="./myScript.js"></script>
+</body>
+</html>
