@@ -19,6 +19,46 @@
     <p>bedanya taruh di body adalah untuk mempercepat performance dari web kita. 
     maksudnya pas refresh lebih cepet. java kan butuh dicompile duli, kalo js tuh interpreted language.
     dicompile pas di jalanin. kalo scriptnya udh kompleks, yg dari head bakal ngalangin render yg di body.</p>
+    <h1>variabel</h1>
+    <p>
+        var, let bisa diassign berkali2 kecuali const. const harus dideklarasi sekalian diassign. 
+        var tuh bisa discope dari mana aja makanya lebih sering pake let.
+    </p>
+    <h1>Method</h1>
+    <p>
+        setiap tipe data (string, undefinde, object, function) punya method sendiri (umumnya).
+        string ada properties bawaan kaya length, substring. 
+    </p>
+    <p>
+        object dibuka dengan { }. bisa buat function di object. query selector hanya akan mengubah tag yg pertama kali dia temui.
+        misal kalo tagnya h1 maka yg dicari adalah h1 pertama, nyarinya juga dari atas htmlnya. 
+        kalo mau ngubah semua h1 bisa pake query selector all, bisa juga pake id
+    </p>
+    <p>
+        tipe data array. array dipake utk menyimpan data yg identik, contohnya pisang, nanas, semangka (sama2 buah).
+        array punya index diawali dengan 0. const tidak melarang mengubah isi dari anak elemen (anggota dari array).
+        jadi gabisa ubah langsung variabel =[...]. 
+        ubahnya variable[1]=...
+    </p>
+    <h1>for</h1>
+    <p>
+        ada berbagai cara buat nulis perulangan di js. 
+        <ol>
+            <li>bisa pake for yg umum di java.</li>
+            <li>bisa pake for (... of ...)</li>
+            <li>bisa pake for (... in ...)</li>
+            <li>atau langsung object.forEach(ada function nya)</li>
+        </ol>
+        
+        
+    </p>
+    <h1>If in JS</h1>
+    <p>
+        mirip dengan yg di java. default if itu true utk int, string dkk kecuali 0/null/undefined akan dibaca false.
+
+    </p>
+
+
     <script src="./myScript.js"></script>
 </body>
 </html>
