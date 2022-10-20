@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-7xl">Hi Fath</h1>
+    <!-- <button onclick="ubahH1()" class="bg-slate-300 p-2">Ubah h1</button> -->
+
+    <div id="app"></div>
+
+
+    <!-- <script>
+        function ubahH1(){
+            document.querySelector('h1').innerHTML = 'Hi James'
+        }
+    </script> -->
+    
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <script type="text/babel">
+        function MyButton (props){
+            return <button className="rounded bg-slate-300 p-2 shadow" onClick={props.ketikaDiKlik}>
+                    {props.title}               
+            </button>
+        }
+
+        function App(){
+
+            const [name,setName] = React.useState('Bambang')
+
+            return <div>
+                <h1 className ="text-6xl">Hi {name.toUpperCase()}</h1>
+                
+                <MyButton title="Ubah nama" ketikaDiKlik={()=>setName('Kalamal')}/>
+                <br/>
+                <button className="rounded bg-slate-300 p-2" onClick={()=>{setName('James')}}>
+                    Ubah Nama
+                </button>
+
+            </div>
+
+            
+        }
+        //inisiasi element react
+        const domContainer = document.querySelector('#app')
+        const root =  ReactDOM.createRoot(domContainer)
+        const element = React.createElement(App)
+        root.render(element)
+    </script>
+</body>
+</html>
