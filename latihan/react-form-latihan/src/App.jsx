@@ -1,4 +1,5 @@
 import { useState } from "react"
+import FormHandlingCheckbox from "./FormHandlingCheckbox"
 import FormHandlingEfficient from "./FormHandlingEfficient"
 import FormHandlingHook from "./FormHandlingHook"
 
@@ -12,6 +13,7 @@ export default function App(){
   }
 
   return <div>
+    <FormHandlingCheckbox/>
     <FormHandlingHook />    
     <hr />
     <FormHandlingEfficient/>
