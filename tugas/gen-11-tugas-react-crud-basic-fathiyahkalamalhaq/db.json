@@ -1,0 +1,70 @@
+{
+  "registrasi": [
+    {
+      "id": 1,
+      "nama": "Fathiyah",
+      "hp": 825464165,
+      "tanggal": "2022-02-03",
+      "item": [
+        "gamis",
+        "kerudung"
+      ],
+      "opsi": "BNI",
+      "jasa": "JNE",
+      "saran": "tambahin gopay dong"
+    },
+    {
+      "nama": "Sherlock Holmes",
+      "hp": "22114162133",
+      "tanggal": "2022-11-03",
+      "item": [
+        "mukena",
+        "kerudung"
+      ],
+      "opsi": "BSI",
+      "jasa": "JNE",
+      "saran": "ko gada baju pria sih?!?!!",
+      "id": 4
+    },
+    {
+      "nama": "ariana adler",
+      "hp": "9926846",
+      "tanggal": "2022-11-05",
+      "item": [
+        "gamis",
+        "kerudung"
+      ],
+      "opsi": "BNI",
+      "jasa": "JNE",
+      "saran": "bisa dong diskon",
+      "id": 5
+    },
+    {
+      "nama": "harry potter",
+      "hp": "069168",
+      "tanggal": "2022-10-28",
+      "item": [
+        "gamis",
+        "mukena"
+      ],
+      "opsi": "BSI",
+      "jasa": "JNT",
+      "saran": "pssst...this is for u know who",
+      "id": 6
+    },
+    {
+      "nama": "Meng Oren",
+      "hp": "082222222222",
+      "tanggal": "2022-10-31",
+      "item": [
+        "gamis",
+        "kerudung",
+        "mukena"
+      ],
+      "opsi": "BNI",
+      "jasa": "JNE",
+      "saran": "jualan whiskas ga?",
+      "id": 7
+    }
+  ]
+}
