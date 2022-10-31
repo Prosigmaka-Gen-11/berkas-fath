@@ -1,0 +1,14 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "Api Sejarah",
+            "author": "someone"
+        },
+        {
+            "id": 2,
+            "title": "Lord of The Rings",
+            "author": "J.R.R. Tolkien"
+        }
+    ]
+}
