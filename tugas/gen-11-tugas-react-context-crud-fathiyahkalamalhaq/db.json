@@ -1,0 +1,22 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "nama": "mukena",
+      "harga": 250000,
+      "deskripsi": "mukena untuk sholat"
+    },
+    {
+      "nama": "ushfidb",
+      "harga": "064984",
+      "deskripsi": "giuwovubr",
+      "id": 2
+    },
+    {
+      "nama": "gamis",
+      "harga": "250000",
+      "deskripsi": "gamis katun ukuran xl",
+      "id": 3
+    }
+  ]
+}
