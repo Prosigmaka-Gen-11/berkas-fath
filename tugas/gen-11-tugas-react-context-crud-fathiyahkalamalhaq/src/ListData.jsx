@@ -25,7 +25,7 @@ export default function ListData(){
 
     useEffect(()=>{
         getList()
-    },[])
+    },[data])
 
     return <>
         <h1>Ini list data</h1>
