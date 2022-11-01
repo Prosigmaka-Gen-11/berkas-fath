@@ -3,11 +3,8 @@
 import { useContext } from "react"
 import { ProviderContext } from "./ProviderThing"
 import axios from "axios"
-import { useState } from "react"
-import { useEffect } from "react"
-import { createContext } from "react"
+import { useState, useEffect, createContext } from "react"
 
-export const ContextForm = createContext()
 
 export default function FormData(){
     const [data, setData] = useState([])
@@ -36,7 +33,6 @@ export default function FormData(){
     },[])
 
     return <>
-        <ContextForm.Provider value={{data}}> 
             <h1>Form Penambahan Produk</h1>
         <form onSubmit={handleSubmit}>
             <label>
@@ -65,7 +61,6 @@ export default function FormData(){
             </button>
         </form>
         
-        </ContextForm.Provider>
         
         
     </>
