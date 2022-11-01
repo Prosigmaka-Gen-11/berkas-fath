@@ -15,7 +15,7 @@ const initialForm = {
 export default function ListData(){
     const [data, setData] = useState([])
     // const [form,setForm] = useState({})
-    // const {form, setForm} = useContext(ProviderContext)
+    const {form} = useContext(ProviderContext)
     
     async function getList(){
         const res = await axios.get("http://localhost:3000/list")
@@ -25,7 +25,7 @@ export default function ListData(){
 
     useEffect(()=>{
         getList()
-    },[data])
+    },[form]) //kalo pake data nanti get json server gaberenti
 
     return <>
         <h1>Ini list data</h1>

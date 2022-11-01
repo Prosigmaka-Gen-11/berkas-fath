@@ -23,6 +23,12 @@
       "harga": "25000",
       "deskripsi": "Ciput/dalaman kerudung rajut",
       "id": 5
+    },
+    {
+      "nama": "manset",
+      "harga": "50000",
+      "deskripsi": "manset tangan untuk menutupi lengan",
+      "id": 6
     }
   ]
 }
